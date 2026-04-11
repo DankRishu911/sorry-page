@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For You ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<audio id="music"></audio>
+
+<!-- SCREEN 1: PASSWORD -->
+<div id="screen1" class="screen active">
+    <h2>Enter Password 🔒</h2>
+    <input id="pass" placeholder="Hint 😉">
+    <button onclick="unlock()">Enter</button>
+</div>
+
+<!-- SCREEN 2: INTRO -->
+<div id="screen2" class="screen">
+    <h1 id="intro"></h1>
+    <!-- ❌ removed music/ -->
+    <button onclick="next(3, 'sorry.mp3')">Continue</button>
+</div>
+
+<!-- SCREEN 3: SORRY LETTER -->
+<div id="screen3" class="screen">
+    <h2>I'm Sorry 💔</h2>
+
+    <div class="letter">
+I’ve been thinking a lot about everything… and honestly, I just feel really sorry.
+
+Not the kind of “sorry” you say just to fix things… but the kind that comes when you actually realize you hurt someone who means a lot to you.
+
+I know I messed up. I didn’t handle things the way I should have, and you didn’t deserve that from me.
+
+If I could go back, I would do things differently… I would choose my words better, understand you more, and not let things reach this point.
+
+It hurts knowing that I was the reason you felt bad.
+
+I’m not expecting everything to suddenly be okay… I just needed you to know that I genuinely regret it.
+
+You matter to me more than I’ve probably shown, and losing you is not something I ever wanted.
+
+I’m really sorry.
+    </div>
+
+    <!-- ❌ removed music/ -->
+    <button onclick="next(4, 'love.mp3')">Next</button>
+</div>
+
+<!-- SCREEN 4: LOVE LETTER -->
+<div id="screen4" class="screen">
+    <h2>Why I Love You ❤️</h2>
+
+    <div class="letter">
+I don’t think I’ve ever properly told you why I love you…
+
+It’s not just one thing, and it’s definitely not something I can explain perfectly.
+
+I love you because of the way you exist in my life… the way you make things feel lighter without even trying.
+
+I love how you make me think about you at random moments, how your presence stays even when you’re not around.
+
+It’s the little things… your smile, your voice, the way you talk, the way you react to things — all of it just feels right to me.
+
+You’re not perfect, and I’m not either… but somehow, to me, you feel perfect in the way that matters.
+
+And even after everything…
+
+one thing hasn’t changed —
+
+I still care about you.
+
+I still think about you.
+
+And I still don’t want to lose you.
+    </div>
+
+    <!-- ❌ removed music/ -->
+    <button onclick="next(5, 'memory.mp3')">Next</button>
+</div>
+
+<!-- SCREEN 5: IMAGES -->
+<div id="screen5" class="screen">
+    <h2>Our Memories 📸</h2>
+
+    <!-- ✅ correct -->
+    <img id="gallery" src="pic1.png">
+
+    <br><br>
+    <button onclick="nextImage()">Next Pic</button>
+
+    <!-- ❌ removed music/ -->
+    <button onclick="next(6, 'ending.mp3')">Finish</button>
+</div>
+
+<!-- SCREEN 6: END -->
+<div id="screen6" class="screen">
+    <h1>❤️</h1>
+    <p>One last thing… I still care about you.</p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
